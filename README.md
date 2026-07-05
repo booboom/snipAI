@@ -73,15 +73,6 @@ SnipAI 是一款面向 macOS 和 Windows 的截图、贴图、录屏与取色工
 - 设置窗口支持拖动。
 - 快捷键设置支持修改截图、滚动截图、录屏、贴图、取色器等全局快捷键。
 - 支持修改截图和录屏默认保存路径。
-- 关于页展示应用版本与技术栈信息。
-
-### 打包与发布
-
-- 打包前会生成优化后的 `build/app`，压缩 HTML/CSS/JS 并使用 `asar` 封装应用代码。
-- 打包产物会自动清理中间目录，只保留最终安装包。
-- 当前默认输出：
-  - macOS：`release/SnipAI-macOS-arm64.dmg`
-  - Windows：`release/SnipAI-Windows-x64-Setup.exe`
 
 ## 默认快捷键
 
@@ -110,21 +101,6 @@ SnipAI 是一款面向 macOS 和 Windows 的截图、贴图、录屏与取色工
 
 首次使用时，请在系统权限弹窗或「系统设置 -> 隐私与安全性」中允许 SnipAI。
 
-## 本地开发
-
-```bash
-npm install
-npm start
-```
-
-## 打包
-
-```bash
-npm run dist:all
-```
-
-打包完成后，`release/` 目录只保留 macOS 和 Windows 两个安装包。
-
 ## 开发中功能
 
 - AI Agent 工作流。
@@ -133,15 +109,6 @@ npm run dist:all
 - AI 多语言翻译。
 - 代码片段识别。
 - 更完整的录屏音频、暂停、继续和格式导出能力。
-
-## 技术栈
-
-- Electron 33
-- Node.js
-- HTML / CSS / JavaScript
-- Electron `BrowserWindow`、`Tray`、`globalShortcut`、`clipboard`、`desktopCapturer`
-- MediaRecorder
-- electron-builder
 
 ## License
 
